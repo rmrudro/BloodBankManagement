@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{228E6586-1B19-4CC5-BCE3-83961B28968B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BloodBankManaementSystemCSharp</RootNamespace>
+    <AssemblyName>BloodBankManaementSystemCSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BBankDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BBankDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BBankDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BBankDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BBankDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BBankDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BBankDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BBankDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BBankDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BBankDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BBankDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BBankDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BloodDonor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BloodDonor.Designer.cs">
+      <DependentUpon>BloodDonor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Camp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Camp.Designer.cs">
+      <DependentUpon>Camp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctorRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doctorRegistration.Designer.cs">
+      <DependentUpon>doctorRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DonorRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DonorRegistration.Designer.cs">
+      <DependentUpon>DonorRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeD.Designer.cs">
+      <DependentUpon>HomeD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StockDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockDetails.Designer.cs">
+      <DependentUpon>StockDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewDoctor.Designer.cs">
+      <DependentUpon>ViewDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewDonorDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewDonorDetails.Designer.cs">
+      <DependentUpon>ViewDonorDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewStock.Designer.cs">
+      <DependentUpon>ViewStock.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BloodDonor.resx">
+      <DependentUpon>BloodDonor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Camp.resx">
+      <DependentUpon>Camp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctorRegistration.resx">
+      <DependentUpon>doctorRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DonorRegistration.resx">
+      <DependentUpon>DonorRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeD.resx">
+      <DependentUpon>HomeD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="StockDetails.resx">
+      <DependentUpon>StockDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewDoctor.resx">
+      <DependentUpon>ViewDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewDonorDetails.resx">
+      <DependentUpon>ViewDonorDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewStock.resx">
+      <DependentUpon>ViewStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="BBankDataSet.xsc">
+      <DependentUpon>BBankDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BBankDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BBankDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BBankDataSet.xss">
+      <DependentUpon>BBankDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BBankDataSet1.xsc">
+      <DependentUpon>BBankDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BBankDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BBankDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BBankDataSet1.xss">
+      <DependentUpon>BBankDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BBankDataSet2.xsc">
+      <DependentUpon>BBankDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BBankDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BBankDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BBankDataSet2.xss">
+      <DependentUpon>BBankDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BBankDataSet3.xsc">
+      <DependentUpon>BBankDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="BBankDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BBankDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BBankDataSet3.xss">
+      <DependentUpon>BBankDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="BBankDataSet4.xsc">
+      <DependentUpon>BBankDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="BBankDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BBankDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BBankDataSet4.xss">
+      <DependentUpon>BBankDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="BBankDataSet5.xsc">
+      <DependentUpon>BBankDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="BBankDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BBankDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BBankDataSet5.xss">
+      <DependentUpon>BBankDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kashipara.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BBank.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="BBank_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>BBank.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
